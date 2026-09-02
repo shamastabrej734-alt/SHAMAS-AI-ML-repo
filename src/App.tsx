@@ -14,6 +14,8 @@ import Projects from './pages/Projects';
 import AdminLayout from './components/layout/AdminLayout';
 import AdminLogin from './pages/Admin/AdminLogin';
 import AdminDashboard from './pages/Admin/AdminDashboard';
+import AiRoadmap from './pages/AiRoadmap';
+import MlCourse from './pages/MlCourse';
 
 export default function App() {
   return (
@@ -26,6 +28,8 @@ export default function App() {
           <Route path="courses" element={<Courses />} />
           <Route path="pdfs" element={<PDFs />} />
           <Route path="projects" element={<Projects />} />
+          <Route path="category/ai" element={<AiRoadmap />} />
+          <Route path="category/ml" element={<MlCourse />} />
         </Route>
         
         <Route path="/admin" element={<AdminLogin />} />

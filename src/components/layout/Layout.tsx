@@ -69,12 +69,13 @@ export default function Layout() {
             </ul>
           </div>
           <div>
-            <h4 className="font-semibold text-white mb-4 text-sm">Legal & About</h4>
+            <h4 className="font-semibold text-white mb-4 text-sm">Contact & About</h4>
             <ul className="space-y-2 text-sm text-[#94A3B8]">
-              <li><Link to="/about" className="hover:text-white transition-colors">About Shamas</Link></li>
-              <li><Link to="/contact" className="hover:text-white transition-colors">Contact</Link></li>
-              <li><Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link></li>
-              <li><Link to="/terms" className="hover:text-white transition-colors">Terms of Service</Link></li>
+              <li><a href="tel:7050652236" className="hover:text-white transition-colors">Mobile: 7050652236</a></li>
+              <li><a href="https://wa.link/kq0eog" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">WhatsApp</a></li>
+              <li><a href="https://www.facebook.com/share/17ivR4TwnV/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Facebook</a></li>
+              <li><a href="https://github.com/shamastabrej734-alt" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">GitHub</a></li>
+              <li><a href="mailto:hanjalaabu598@gmail.com" className="hover:text-white transition-colors">Email Support</a></li>
             </ul>
           </div>
         </div>
