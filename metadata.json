@@ -1,0 +1,6 @@
+{
+  "name": "Shamas AI & ML Course",
+  "description": "Learn AI, Machine Learning & Technology — In Your Language. Understand First. Build Projects. Become Industry Ready.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
