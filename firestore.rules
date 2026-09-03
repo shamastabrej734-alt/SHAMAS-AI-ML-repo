@@ -1,0 +1,45 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    function isAdmin() {
+      // The admin email is hanjalaabu598@gmail.com
+      return request.auth != null && request.auth.token.email == 'hanjalaabu598@gmail.com';
+    }
+
+    match /users/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+
+    // Public read, Admin write
+    match /courses/{document=**} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+    match /pdfs/{document=**} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+    match /images/{document=**} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+    match /projects/{document=**} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+    match /content/{document=**} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+    match /resources/{document=**} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    match /gallery/{document=**} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+  }
+}

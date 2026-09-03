@@ -21,7 +21,8 @@ export default function Layout() {
               <Link to="/youtube" className="text-sm font-medium text-[#94A3B8] hover:text-white transition-colors flex items-center gap-1">
                 <PlaySquare className="w-4 h-4" /> Translate
               </Link>
-              <Link to="/pdfs" className="text-sm font-medium text-[#94A3B8] hover:text-white transition-colors">PDFs</Link>
+              <Link to="/resources" className="text-sm font-medium text-[#94A3B8] hover:text-white transition-colors">Resources</Link>
+              <Link to="/gallery" className="text-sm font-medium text-[#94A3B8] hover:text-white transition-colors">Gallery</Link>
               <Link to="/projects" className="text-sm font-medium text-[#94A3B8] hover:text-white transition-colors">Projects</Link>
               <Link to="/dashboard" className="text-sm font-medium text-[#94A3B8] hover:text-white transition-colors">Dashboard</Link>
             </div>
@@ -64,7 +65,8 @@ export default function Layout() {
             <ul className="space-y-2 text-sm text-[#94A3B8]">
               <li><Link to="/courses" className="hover:text-white transition-colors">All Courses</Link></li>
               <li><Link to="/youtube" className="hover:text-white transition-colors">YouTube Translator</Link></li>
-              <li><Link to="/pdfs" className="hover:text-white transition-colors">PDF Library</Link></li>
+              <li><Link to="/resources" className="hover:text-white transition-colors">Resource Library</Link></li>
+              <li><Link to="/gallery" className="hover:text-white transition-colors">Image Gallery</Link></li>
               <li><Link to="/projects" className="hover:text-white transition-colors">Projects</Link></li>
             </ul>
           </div>
